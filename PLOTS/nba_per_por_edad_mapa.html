@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1767e021abfe1070322f05c89d37e94d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1767e021abfe1070322f05c89d37e94d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1767e021abfe1070322f05c89d37e94d = L.map(
+                "map_1767e021abfe1070322f05c89d37e94d",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c7c3ee19fe49d5b7bb09b1c79d5e0319 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7c3ee19fe49d5b7bb09b1c79d5e0319.addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+            var circle_marker_e76a2b3e7adcc913829cfec32fd8a53a = L.circleMarker(
+                [33.749, -84.388],
+                {"bubblingMouseEvents": true, "color": "#0000ecff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ecff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.55276685817962, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_0c4f83ba5bcb06bd2f1d8d5e8952dddd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd4cac2571cc5ad0c2ea3e0098c5ab4a = $(`<div id="html_dd4cac2571cc5ad0c2ea3e0098c5ab4a" style="width: 100.0%; height: 100.0%;">Equipo: ATL<br>Ciudad: Atlanta, GA<br>PER promedio: 13.47<br>Número de jugadores: 35</div>`)[0];
+                popup_0c4f83ba5bcb06bd2f1d8d5e8952dddd.setContent(html_dd4cac2571cc5ad0c2ea3e0098c5ab4a);
+            
+        
+
+        circle_marker_e76a2b3e7adcc913829cfec32fd8a53a.bindPopup(popup_0c4f83ba5bcb06bd2f1d8d5e8952dddd)
+        ;
+
+        
+    
+    
+            var circle_marker_a5d7a7b8c420432468a890d267f34ca7 = L.circleMarker(
+                [42.3601, -71.0589],
+                {"bubblingMouseEvents": true, "color": "#0000f9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.361052313274872, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_a0d08ca57de179261b40cf960e58e535 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b1e070481597bf20b4a46266366306e = $(`<div id="html_5b1e070481597bf20b4a46266366306e" style="width: 100.0%; height: 100.0%;">Equipo: BOS<br>Ciudad: Boston, MA<br>PER promedio: 13.17<br>Número de jugadores: 21</div>`)[0];
+                popup_a0d08ca57de179261b40cf960e58e535.setContent(html_5b1e070481597bf20b4a46266366306e);
+            
+        
+
+        circle_marker_a5d7a7b8c420432468a890d267f34ca7.bindPopup(popup_a0d08ca57de179261b40cf960e58e535)
+        ;
+
+        
+    
+    
+            var circle_marker_9d41ef78c3fdb938cd46c4a3b1fbb8d0 = L.circleMarker(
+                [41.8781, -87.6298],
+                {"bubblingMouseEvents": true, "color": "#0000bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000bfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.231554278802541, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_2425f70a4ee52bbc983a9a66cfd59e6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1939ef411f80d377c6419c4b793620b2 = $(`<div id="html_1939ef411f80d377c6419c4b793620b2" style="width: 100.0%; height: 100.0%;">Equipo: CHI<br>Ciudad: Chicago, IL<br>PER promedio: 14.54<br>Número de jugadores: 32</div>`)[0];
+                popup_2425f70a4ee52bbc983a9a66cfd59e6a.setContent(html_1939ef411f80d377c6419c4b793620b2);
+            
+        
+
+        circle_marker_9d41ef78c3fdb938cd46c4a3b1fbb8d0.bindPopup(popup_2425f70a4ee52bbc983a9a66cfd59e6a)
+        ;
+
+        
+    
+    
+            var circle_marker_557383d276f782d0c7033367e0c21e7c = L.circleMarker(
+                [41.4993, -81.6944],
+                {"bubblingMouseEvents": true, "color": "#0000ecff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ecff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.565027352447975, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_3c1c265d81bfc5a3a31b300df039b9cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d901ff1802fcf9ea8de31fe418925daa = $(`<div id="html_d901ff1802fcf9ea8de31fe418925daa" style="width: 100.0%; height: 100.0%;">Equipo: CLE<br>Ciudad: Cleveland, OH<br>PER promedio: 13.49<br>Número de jugadores: 33</div>`)[0];
+                popup_3c1c265d81bfc5a3a31b300df039b9cd.setContent(html_d901ff1802fcf9ea8de31fe418925daa);
+            
+        
+
+        circle_marker_557383d276f782d0c7033367e0c21e7c.bindPopup(popup_3c1c265d81bfc5a3a31b300df039b9cd)
+        ;
+
+        
+    
+    
+            var circle_marker_3b138ec1471d242c133f149cbcbec4c0 = L.circleMarker(
+                [32.7767, -96.797],
+                {"bubblingMouseEvents": true, "color": "#0000a2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000a2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.659812518899306, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_28db83450a1fa5c9a8424015ca61efee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_695a5a48c5eac140c7b0cc38bbc854ed = $(`<div id="html_695a5a48c5eac140c7b0cc38bbc854ed" style="width: 100.0%; height: 100.0%;">Equipo: DAL<br>Ciudad: Dallas, TX<br>PER promedio: 15.21<br>Número de jugadores: 42</div>`)[0];
+                popup_28db83450a1fa5c9a8424015ca61efee.setContent(html_695a5a48c5eac140c7b0cc38bbc854ed);
+            
+        
+
+        circle_marker_3b138ec1471d242c133f149cbcbec4c0.bindPopup(popup_28db83450a1fa5c9a8424015ca61efee)
+        ;
+
+        
+    
+    
+            var circle_marker_9568bc2a549533080a1e12d7c2080f22 = L.circleMarker(
+                [39.7392, -104.9903],
+                {"bubblingMouseEvents": true, "color": "#171dfcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#171dfcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.035077109162383, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_4ab55cfcd01133375c96a0721ce8f630 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76fdcac3683ae4d01e47b22a5d96ab3d = $(`<div id="html_76fdcac3683ae4d01e47b22a5d96ab3d" style="width: 100.0%; height: 100.0%;">Equipo: DEN<br>Ciudad: Denver, CO<br>PER promedio: 12.65<br>Número de jugadores: 15</div>`)[0];
+                popup_4ab55cfcd01133375c96a0721ce8f630.setContent(html_76fdcac3683ae4d01e47b22a5d96ab3d);
+            
+        
+
+        circle_marker_9568bc2a549533080a1e12d7c2080f22.bindPopup(popup_4ab55cfcd01133375c96a0721ce8f630)
+        ;
+
+        
+    
+    
+            var circle_marker_5a749cb48cc6a10cf7197cbb69535a1b = L.circleMarker(
+                [42.3314, -83.0458],
+                {"bubblingMouseEvents": true, "color": "#0000fbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.334045858836534, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_c03f5ea1e960a33dfd59ac2cc40bd0ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04354373423b49b06fa71e0f5ffebfab = $(`<div id="html_04354373423b49b06fa71e0f5ffebfab" style="width: 100.0%; height: 100.0%;">Equipo: DET<br>Ciudad: Detroit, MI<br>PER promedio: 13.12<br>Número de jugadores: 29</div>`)[0];
+                popup_c03f5ea1e960a33dfd59ac2cc40bd0ad.setContent(html_04354373423b49b06fa71e0f5ffebfab);
+            
+        
+
+        circle_marker_5a749cb48cc6a10cf7197cbb69535a1b.bindPopup(popup_c03f5ea1e960a33dfd59ac2cc40bd0ad)
+        ;
+
+        
+    
+    
+            var circle_marker_e08f68c20505e9c73722d62edb1509e1 = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "#0000b6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000b6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.35651648019353, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_94b5cb3777d6c1cd9848dfec7d721df2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efe932326baed9952e70e36bf8c82c67 = $(`<div id="html_efe932326baed9952e70e36bf8c82c67" style="width: 100.0%; height: 100.0%;">Equipo: GSW<br>Ciudad: San Francisco, CA<br>PER promedio: 14.73<br>Número de jugadores: 35</div>`)[0];
+                popup_94b5cb3777d6c1cd9848dfec7d721df2.setContent(html_efe932326baed9952e70e36bf8c82c67);
+            
+        
+
+        circle_marker_e08f68c20505e9c73722d62edb1509e1.bindPopup(popup_94b5cb3777d6c1cd9848dfec7d721df2)
+        ;
+
+        
+    
+    
+            var circle_marker_b6477ff885a6fad7b27ce5361b27669a = L.circleMarker(
+                [29.7604, -95.3698],
+                {"bubblingMouseEvents": true, "color": "#0000d8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.858482007862111, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_f35bba2bafef5588d1f5b608de32d97b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ed31c59eb41e29c4b9fd85f540cb3cb = $(`<div id="html_5ed31c59eb41e29c4b9fd85f540cb3cb" style="width: 100.0%; height: 100.0%;">Equipo: HOU<br>Ciudad: Houston, TX<br>PER promedio: 13.95<br>Número de jugadores: 20</div>`)[0];
+                popup_f35bba2bafef5588d1f5b608de32d97b.setContent(html_5ed31c59eb41e29c4b9fd85f540cb3cb);
+            
+        
+
+        circle_marker_b6477ff885a6fad7b27ce5361b27669a.bindPopup(popup_f35bba2bafef5588d1f5b608de32d97b)
+        ;
+
+        
+    
+    
+            var circle_marker_c4855b4319ccd37621cc84e494b831bb = L.circleMarker(
+                [39.7684, -86.1581],
+                {"bubblingMouseEvents": true, "color": "#0000ceff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ceff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.005476598461176, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_d5502ab7991aa7d2b7b57a8b8f54c9ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a621ef20427403ae44ac4e4d23c2264 = $(`<div id="html_3a621ef20427403ae44ac4e4d23c2264" style="width: 100.0%; height: 100.0%;">Equipo: IND<br>Ciudad: Indianapolis, IN<br>PER promedio: 14.18<br>Número de jugadores: 27</div>`)[0];
+                popup_d5502ab7991aa7d2b7b57a8b8f54c9ac.setContent(html_3a621ef20427403ae44ac4e4d23c2264);
+            
+        
+
+        circle_marker_c4855b4319ccd37621cc84e494b831bb.bindPopup(popup_d5502ab7991aa7d2b7b57a8b8f54c9ac)
+        ;
+
+        
+    
+    
+            var circle_marker_59d4672dc5dbfb1f5daec928e7f33b90 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#00008dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.976111279104929, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_1bd58b52a02d04ff60552ac057a61591 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b17d93814c66a63b5d14d4704972226 = $(`<div id="html_0b17d93814c66a63b5d14d4704972226" style="width: 100.0%; height: 100.0%;">Equipo: LAC<br>Ciudad: Los Angeles, CA<br>PER promedio: 15.71<br>Número de jugadores: 40</div>`)[0];
+                popup_1bd58b52a02d04ff60552ac057a61591.setContent(html_0b17d93814c66a63b5d14d4704972226);
+            
+        
+
+        circle_marker_59d4672dc5dbfb1f5daec928e7f33b90.bindPopup(popup_1bd58b52a02d04ff60552ac057a61591)
+        ;
+
+        
+    
+    
+            var circle_marker_7030753222a9f7cf0b4c6b2b89f0a545 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#556af3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#556af3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.416994254611431, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_fd59427ec17e0ff4292e4b6542b2e147 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ffa14202593f586746862b8fce68c85 = $(`<div id="html_7ffa14202593f586746862b8fce68c85" style="width: 100.0%; height: 100.0%;">Equipo: LAL<br>Ciudad: Los Angeles, CA<br>PER promedio: 11.68<br>Número de jugadores: 45</div>`)[0];
+                popup_fd59427ec17e0ff4292e4b6542b2e147.setContent(html_7ffa14202593f586746862b8fce68c85);
+            
+        
+
+        circle_marker_7030753222a9f7cf0b4c6b2b89f0a545.bindPopup(popup_fd59427ec17e0ff4292e4b6542b2e147)
+        ;
+
+        
+    
+    
+            var circle_marker_3c82972e50309609dc4afa1ba90e8ec1 = L.circleMarker(
+                [35.1495, -90.049],
+                {"bubblingMouseEvents": true, "color": "#0000f7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.390686422739645, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_3e93d3235b68f46e8f2a9be06ec1c45e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7aa8be4343145cabfad7ecf044dd6b04 = $(`<div id="html_7aa8be4343145cabfad7ecf044dd6b04" style="width: 100.0%; height: 100.0%;">Equipo: MEM<br>Ciudad: Memphis, TN<br>PER promedio: 13.21<br>Número de jugadores: 30</div>`)[0];
+                popup_3e93d3235b68f46e8f2a9be06ec1c45e.setContent(html_7aa8be4343145cabfad7ecf044dd6b04);
+            
+        
+
+        circle_marker_3c82972e50309609dc4afa1ba90e8ec1.bindPopup(popup_3e93d3235b68f46e8f2a9be06ec1c45e)
+        ;
+
+        
+    
+    
+            var circle_marker_2ea81a40f05b7f54b06d3e829ebee655 = L.circleMarker(
+                [25.7617, -80.1918],
+                {"bubblingMouseEvents": true, "color": "#0000c9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000c9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.076504384638644, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_5c250a8dd5871cbeac37510d508f68d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a66f91bc2f808c05f30872f51388c792 = $(`<div id="html_a66f91bc2f808c05f30872f51388c792" style="width: 100.0%; height: 100.0%;">Equipo: MIA<br>Ciudad: Miami, FL<br>PER promedio: 14.29<br>Número de jugadores: 30</div>`)[0];
+                popup_5c250a8dd5871cbeac37510d508f68d3.setContent(html_a66f91bc2f808c05f30872f51388c792);
+            
+        
+
+        circle_marker_2ea81a40f05b7f54b06d3e829ebee655.bindPopup(popup_5c250a8dd5871cbeac37510d508f68d3)
+        ;
+
+        
+    
+    
+            var circle_marker_4b3bebc8c555440138201f80f407ef7e = L.circleMarker(
+                [43.0389, -87.9065],
+                {"bubblingMouseEvents": true, "color": "#232cfaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#232cfaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.918168919076086, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_c8543292e59dc21562542a32ec1fd0c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_768da2fc8054f14a20aad294b7710fec = $(`<div id="html_768da2fc8054f14a20aad294b7710fec" style="width: 100.0%; height: 100.0%;">Equipo: MIL<br>Ciudad: Milwaukee, WI<br>PER promedio: 12.47<br>Número de jugadores: 39</div>`)[0];
+                popup_c8543292e59dc21562542a32ec1fd0c3.setContent(html_768da2fc8054f14a20aad294b7710fec);
+            
+        
+
+        circle_marker_4b3bebc8c555440138201f80f407ef7e.bindPopup(popup_c8543292e59dc21562542a32ec1fd0c3)
+        ;
+
+        
+    
+    
+            var circle_marker_5dc60a1510ed7d47f95fd148aad91b07 = L.circleMarker(
+                [44.9778, -93.265],
+                {"bubblingMouseEvents": true, "color": "#add8e6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#add8e6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.540671303296039, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_4b3e1f19886bfc5124b215ca8257805c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ce06969fc3c46b0dddf19f2cb5d4fa = $(`<div id="html_a3ce06969fc3c46b0dddf19f2cb5d4fa" style="width: 100.0%; height: 100.0%;">Equipo: MIN<br>Ciudad: Minneapolis, MN<br>PER promedio: 10.30<br>Número de jugadores: 22</div>`)[0];
+                popup_4b3e1f19886bfc5124b215ca8257805c.setContent(html_a3ce06969fc3c46b0dddf19f2cb5d4fa);
+            
+        
+
+        circle_marker_5dc60a1510ed7d47f95fd148aad91b07.bindPopup(popup_4b3e1f19886bfc5124b215ca8257805c)
+        ;
+
+        
+    
+    
+            var circle_marker_89f7c1074a703a251b620daa60615906 = L.circleMarker(
+                [29.9511, -90.0715],
+                {"bubblingMouseEvents": true, "color": "#3948f7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3948f7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.692994166107372, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_522bb2d4fda3aa73307734bb99078874 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_233b05ee928a94732f73c9e50415c839 = $(`<div id="html_233b05ee928a94732f73c9e50415c839" style="width: 100.0%; height: 100.0%;">Equipo: NOP<br>Ciudad: New Orleans, LA<br>PER promedio: 12.11<br>Número de jugadores: 41</div>`)[0];
+                popup_522bb2d4fda3aa73307734bb99078874.setContent(html_233b05ee928a94732f73c9e50415c839);
+            
+        
+
+        circle_marker_89f7c1074a703a251b620daa60615906.bindPopup(popup_522bb2d4fda3aa73307734bb99078874)
+        ;
+
+        
+    
+    
+            var circle_marker_ce465417bf228eb1bbd96640a2a25198 = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "#0709feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0709feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.191714544904748, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_0c131c62d568aa8def061b439e6554cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_123ba412dda31de0c0585381cce9d99f = $(`<div id="html_123ba412dda31de0c0585381cce9d99f" style="width: 100.0%; height: 100.0%;">Equipo: NYK<br>Ciudad: New York, NY<br>PER promedio: 12.90<br>Número de jugadores: 28</div>`)[0];
+                popup_0c131c62d568aa8def061b439e6554cd.setContent(html_123ba412dda31de0c0585381cce9d99f);
+            
+        
+
+        circle_marker_ce465417bf228eb1bbd96640a2a25198.bindPopup(popup_0c131c62d568aa8def061b439e6554cd)
+        ;
+
+        
+    
+    
+            var circle_marker_4218e589c5bf975a21ef4213a1fd3ac0 = L.circleMarker(
+                [35.4676, -97.5164],
+                {"bubblingMouseEvents": true, "color": "#00008bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_52d91fb0c95df0f9380c5c36c9a3036f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b37ad4107c0d8ebf375efb722a5501b0 = $(`<div id="html_b37ad4107c0d8ebf375efb722a5501b0" style="width: 100.0%; height: 100.0%;">Equipo: OKC<br>Ciudad: Oklahoma City, OK<br>PER promedio: 15.75<br>Número de jugadores: 21</div>`)[0];
+                popup_52d91fb0c95df0f9380c5c36c9a3036f.setContent(html_b37ad4107c0d8ebf375efb722a5501b0);
+            
+        
+
+        circle_marker_4218e589c5bf975a21ef4213a1fd3ac0.bindPopup(popup_52d91fb0c95df0f9380c5c36c9a3036f)
+        ;
+
+        
+    
+    
+            var circle_marker_c2876c4d0229462f0a9526ba0c4c3de8 = L.circleMarker(
+                [28.5383, -81.3792],
+                {"bubblingMouseEvents": true, "color": "#0d10feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d10feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.135683665664633, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_356ecac25b573c80f202581a471869e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68d0e80fdb32039a27829c27ac2806bd = $(`<div id="html_68d0e80fdb32039a27829c27ac2806bd" style="width: 100.0%; height: 100.0%;">Equipo: ORL<br>Ciudad: Orlando, FL<br>PER promedio: 12.81<br>Número de jugadores: 17</div>`)[0];
+                popup_356ecac25b573c80f202581a471869e6.setContent(html_68d0e80fdb32039a27829c27ac2806bd);
+            
+        
+
+        circle_marker_c2876c4d0229462f0a9526ba0c4c3de8.bindPopup(popup_356ecac25b573c80f202581a471869e6)
+        ;
+
+        
+    
+    
+            var circle_marker_bdd5d868d61a6217c31aeadedbea5e0b = L.circleMarker(
+                [39.9526, -75.1652],
+                {"bubblingMouseEvents": true, "color": "#0000fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.310169570375196, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_44efdfc9f1d573027fd175a9323c32bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c96597dfdc16cf6c3645117fc43b1ac = $(`<div id="html_4c96597dfdc16cf6c3645117fc43b1ac" style="width: 100.0%; height: 100.0%;">Equipo: PHI<br>Ciudad: Philadelphia, PA<br>PER promedio: 13.09<br>Número de jugadores: 52</div>`)[0];
+                popup_44efdfc9f1d573027fd175a9323c32bd.setContent(html_4c96597dfdc16cf6c3645117fc43b1ac);
+            
+        
+
+        circle_marker_bdd5d868d61a6217c31aeadedbea5e0b.bindPopup(popup_44efdfc9f1d573027fd175a9323c32bd)
+        ;
+
+        
+    
+    
+            var circle_marker_8f1ac9289ebf6c2b2a3b8ba111e6fd4a = L.circleMarker(
+                [45.5051, -122.675],
+                {"bubblingMouseEvents": true, "color": "#4f63f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4f63f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.475052918052615, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_eb86a594443faab3945fabae690eed69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80342e661bf29a16e64f7f1d1072bed3 = $(`<div id="html_80342e661bf29a16e64f7f1d1072bed3" style="width: 100.0%; height: 100.0%;">Equipo: POR<br>Ciudad: Portland, OR<br>PER promedio: 11.77<br>Número de jugadores: 21</div>`)[0];
+                popup_eb86a594443faab3945fabae690eed69.setContent(html_80342e661bf29a16e64f7f1d1072bed3);
+            
+        
+
+        circle_marker_8f1ac9289ebf6c2b2a3b8ba111e6fd4a.bindPopup(popup_eb86a594443faab3945fabae690eed69)
+        ;
+
+        
+    
+    
+            var circle_marker_390a7d99b58ade844476182005f0b925 = L.circleMarker(
+                [38.5816, -121.4944],
+                {"bubblingMouseEvents": true, "color": "#0000f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.442767631732549, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_f5fa832e554f68b99c4bad5d0ed5ac27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ae7de09e23bb3ea13be96818d7fe610 = $(`<div id="html_9ae7de09e23bb3ea13be96818d7fe610" style="width: 100.0%; height: 100.0%;">Equipo: SAC<br>Ciudad: Sacramento, CA<br>PER promedio: 13.30<br>Número de jugadores: 43</div>`)[0];
+                popup_f5fa832e554f68b99c4bad5d0ed5ac27.setContent(html_9ae7de09e23bb3ea13be96818d7fe610);
+            
+        
+
+        circle_marker_390a7d99b58ade844476182005f0b925.bindPopup(popup_f5fa832e554f68b99c4bad5d0ed5ac27)
+        ;
+
+        
+    
+    
+            var circle_marker_2025685fb7e61f69f941782e88580858 = L.circleMarker(
+                [29.4241, -98.4936],
+                {"bubblingMouseEvents": true, "color": "#0000deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000deff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.767462957363168, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_eac68a5e793112e9d87506896ed5e909 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6921f4cde53f6e0cd4b21bd1c2f74ccd = $(`<div id="html_6921f4cde53f6e0cd4b21bd1c2f74ccd" style="width: 100.0%; height: 100.0%;">Equipo: SAS<br>Ciudad: San Antonio, TX<br>PER promedio: 13.81<br>Número de jugadores: 30</div>`)[0];
+                popup_eac68a5e793112e9d87506896ed5e909.setContent(html_6921f4cde53f6e0cd4b21bd1c2f74ccd);
+            
+        
+
+        circle_marker_2025685fb7e61f69f941782e88580858.bindPopup(popup_eac68a5e793112e9d87506896ed5e909)
+        ;
+
+        
+    
+    
+            var circle_marker_373f6ab330d84a7c4d78f04f9ff37c9b = L.circleMarker(
+                [43.6532, -79.3832],
+                {"bubblingMouseEvents": true, "color": "#5c73f2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5c73f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.348553573228505, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_cdcf5e82f0300b987700b91efe4f6040 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_077012e9dc3b26197bb8652248227db3 = $(`<div id="html_077012e9dc3b26197bb8652248227db3" style="width: 100.0%; height: 100.0%;">Equipo: TOR<br>Ciudad: Toronto, ON<br>PER promedio: 11.57<br>Número de jugadores: 36</div>`)[0];
+                popup_cdcf5e82f0300b987700b91efe4f6040.setContent(html_077012e9dc3b26197bb8652248227db3);
+            
+        
+
+        circle_marker_373f6ab330d84a7c4d78f04f9ff37c9b.bindPopup(popup_cdcf5e82f0300b987700b91efe4f6040)
+        ;
+
+        
+    
+    
+            var circle_marker_9fe3caaa9007daa9f557da4e6e2f55b9 = L.circleMarker(
+                [40.7608, -111.891],
+                {"bubblingMouseEvents": true, "color": "#191ffcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#191ffcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.01644995464167, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_0ecd167ad6a0f74175e702cf87700b3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3ecfc3a8dc3901fa228ab2522826a82 = $(`<div id="html_e3ecfc3a8dc3901fa228ab2522826a82" style="width: 100.0%; height: 100.0%;">Equipo: UTA<br>Ciudad: Salt Lake City, UT<br>PER promedio: 12.62<br>Número de jugadores: 25</div>`)[0];
+                popup_0ecd167ad6a0f74175e702cf87700b3f.setContent(html_e3ecfc3a8dc3901fa228ab2522826a82);
+            
+        
+
+        circle_marker_9fe3caaa9007daa9f557da4e6e2f55b9.bindPopup(popup_0ecd167ad6a0f74175e702cf87700b3f)
+        ;
+
+        
+    
+    
+            var circle_marker_55fdaa37a70997498c60f04d48e445ba = L.circleMarker(
+                [38.9072, -77.0369],
+                {"bubblingMouseEvents": true, "color": "#0000c6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000c6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.119704758501252, "stroke": true, "weight": 1}
+            ).addTo(map_1767e021abfe1070322f05c89d37e94d);
+        
+    
+        var popup_7f8fcec0ca5dbd4ac50c65347f8ebda1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bca72f15f81d7e72202861fa7cf7943 = $(`<div id="html_7bca72f15f81d7e72202861fa7cf7943" style="width: 100.0%; height: 100.0%;">Equipo: WAS<br>Ciudad: Washington, DC<br>PER promedio: 14.36<br>Número de jugadores: 44</div>`)[0];
+                popup_7f8fcec0ca5dbd4ac50c65347f8ebda1.setContent(html_7bca72f15f81d7e72202861fa7cf7943);
+            
+        
+
+        circle_marker_55fdaa37a70997498c60f04d48e445ba.bindPopup(popup_7f8fcec0ca5dbd4ac50c65347f8ebda1)
+        ;
+
+        
+    
+    
+    var color_map_7e2e17ef8263a31724ab09d410b6f8fc = {};
+
+    
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.color = d3.scale.threshold()
+              .domain([10.299999999999999, 10.310917072239716, 10.321834144479434, 10.332751216719151, 10.343668288958868, 10.354585361198586, 10.365502433438303, 10.376419505678022, 10.38733657791774, 10.398253650157457, 10.409170722397175, 10.420087794636892, 10.43100486687661, 10.441921939116327, 10.452839011356044, 10.463756083595761, 10.474673155835479, 10.485590228075196, 10.496507300314914, 10.507424372554633, 10.51834144479435, 10.529258517034068, 10.540175589273785, 10.551092661513502, 10.56200973375322, 10.572926805992937, 10.583843878232654, 10.594760950472372, 10.60567802271209, 10.616595094951807, 10.627512167191524, 10.638429239431243, 10.64934631167096, 10.660263383910678, 10.671180456150395, 10.682097528390113, 10.69301460062983, 10.703931672869547, 10.714848745109265, 10.725765817348982, 10.7366828895887, 10.747599961828417, 10.758517034068134, 10.769434106307854, 10.780351178547571, 10.791268250787288, 10.802185323027006, 10.813102395266723, 10.82401946750644, 10.834936539746158, 10.845853611985875, 10.856770684225593, 10.86768775646531, 10.878604828705027, 10.889521900944745, 10.900438973184464, 10.911356045424181, 10.922273117663899, 10.933190189903616, 10.944107262143334, 10.955024334383051, 10.965941406622768, 10.976858478862486, 10.987775551102203, 10.99869262334192, 11.009609695581638, 11.020526767821355, 11.031443840061073, 11.042360912300792, 11.05327798454051, 11.064195056780227, 11.075112129019944, 11.086029201259661, 11.096946273499379, 11.107863345739096, 11.118780417978813, 11.12969749021853, 11.140614562458248, 11.151531634697966, 11.162448706937685, 11.173365779177402, 11.18428285141712, 11.195199923656837, 11.206116995896554, 11.217034068136272, 11.227951140375989, 11.238868212615706, 11.249785284855424, 11.260702357095141, 11.271619429334859, 11.282536501574576, 11.293453573814293, 11.304370646054013, 11.31528771829373, 11.326204790533447, 11.337121862773165, 11.348038935012882, 11.3589560072526, 11.369873079492317, 11.380790151732034, 11.391707223971752, 11.402624296211469, 11.413541368451186, 11.424458440690906, 11.435375512930623, 11.44629258517034, 11.457209657410058, 11.468126729649775, 11.479043801889492, 11.48996087412921, 11.500877946368927, 11.511795018608645, 11.522712090848362, 11.53362916308808, 11.544546235327797, 11.555463307567514, 11.566380379807232, 11.57729745204695, 11.588214524286668, 11.599131596526385, 11.610048668766103, 11.62096574100582, 11.631882813245538, 11.642799885485255, 11.653716957724972, 11.66463402996469, 11.675551102204407, 11.686468174444126, 11.697385246683844, 11.708302318923561, 11.719219391163278, 11.730136463402996, 11.741053535642713, 11.75197060788243, 11.762887680122148, 11.773804752361865, 11.784721824601583, 11.7956388968413, 11.806555969081018, 11.817473041320735, 11.828390113560452, 11.839307185800171, 11.850224258039889, 11.861141330279606, 11.872058402519324, 11.882975474759041, 11.893892546998758, 11.904809619238476, 11.915726691478193, 11.92664376371791, 11.937560835957628, 11.948477908197345, 11.959394980437065, 11.970312052676782, 11.9812291249165, 11.992146197156217, 12.003063269395934, 12.013980341635651, 12.024897413875369, 12.035814486115086, 12.046731558354804, 12.057648630594521, 12.068565702834238, 12.079482775073956, 12.090399847313673, 12.10131691955339, 12.11223399179311, 12.123151064032827, 12.134068136272544, 12.144985208512262, 12.15590228075198, 12.166819352991697, 12.177736425231414, 12.188653497471131, 12.199570569710849, 12.210487641950566, 12.221404714190284, 12.232321786430003, 12.24323885866972, 12.254155930909437, 12.265073003149155, 12.275990075388872, 12.28690714762859, 12.297824219868307, 12.308741292108024, 12.319658364347742, 12.33057543658746, 12.341492508827177, 12.352409581066894, 12.363326653306613, 12.374243725546329, 12.385160797786048, 12.396077870025765, 12.406994942265483, 12.4179120145052, 12.428829086744917, 12.439746158984635, 12.450663231224352, 12.46158030346407, 12.472497375703787, 12.483414447943506, 12.494331520183223, 12.50524859242294, 12.516165664662658, 12.527082736902376, 12.537999809142093, 12.54891688138181, 12.559833953621528, 12.570751025861245, 12.581668098100963, 12.59258517034068, 12.603502242580397, 12.614419314820115, 12.625336387059832, 12.636253459299551, 12.647170531539267, 12.658087603778986, 12.669004676018703, 12.67992174825842, 12.690838820498138, 12.701755892737856, 12.712672964977573, 12.72359003721729, 12.73450710945701, 12.745424181696725, 12.756341253936444, 12.767258326176162, 12.778175398415879, 12.789092470655596, 12.800009542895314, 12.810926615135031, 12.821843687374749, 12.832760759614466, 12.843677831854183, 12.8545949040939, 12.865511976333618, 12.876429048573335, 12.887346120813053, 12.89826319305277, 12.90918026529249, 12.920097337532207, 12.931014409771924, 12.941931482011642, 12.952848554251359, 12.963765626491076, 12.974682698730794, 12.985599770970511, 12.996516843210228, 13.007433915449948, 13.018350987689663, 13.029268059929382, 13.0401851321691, 13.051102204408817, 13.062019276648535, 13.072936348888252, 13.08385342112797, 13.094770493367687, 13.105687565607404, 13.116604637847121, 13.127521710086839, 13.138438782326556, 13.149355854566274, 13.160272926805991, 13.17118999904571, 13.182107071285428, 13.193024143525145, 13.203941215764862, 13.21485828800458, 13.225775360244297, 13.236692432484015, 13.247609504723732, 13.25852657696345, 13.269443649203167, 13.280360721442886, 13.291277793682603, 13.30219486592232, 13.313111938162038, 13.324029010401755, 13.334946082641473, 13.34586315488119, 13.356780227120908, 13.367697299360625, 13.378614371600342, 13.38953144384006, 13.400448516079777, 13.411365588319494, 13.422282660559212, 13.43319973279893, 13.444116805038648, 13.455033877278366, 13.465950949518083, 13.4768680217578, 13.487785093997518, 13.498702166237235, 13.509619238476953, 13.52053631071667, 13.531453382956387, 13.542370455196107, 13.553287527435824, 13.564204599675541, 13.575121671915259, 13.586038744154976, 13.596955816394694, 13.607872888634411, 13.618789960874128, 13.629707033113846, 13.640624105353563, 13.65154117759328, 13.662458249832998, 13.673375322072715, 13.684292394312433, 13.695209466552152, 13.706126538791867, 13.717043611031587, 13.727960683271304, 13.738877755511021, 13.749794827750739, 13.760711899990456, 13.771628972230173, 13.78254604446989, 13.79346311670961, 13.804380188949326, 13.815297261189045, 13.826214333428762, 13.83713140566848, 13.848048477908197, 13.858965550147914, 13.869882622387632, 13.880799694627349, 13.891716766867066, 13.902633839106784, 13.913550911346501, 13.924467983586219, 13.935385055825936, 13.946302128065653, 13.95721920030537, 13.96813627254509, 13.979053344784807, 13.989970417024525, 14.000887489264242, 14.01180456150396, 14.022721633743677, 14.033638705983394, 14.044555778223112, 14.055472850462829, 14.066389922702548, 14.077306994942264, 14.088224067181983, 14.0991411394217, 14.110058211661418, 14.120975283901135, 14.131892356140852, 14.14280942838057, 14.153726500620287, 14.164643572860005, 14.175560645099722, 14.18647771733944, 14.197394789579157, 14.208311861818874, 14.219228934058592, 14.230146006298309, 14.241063078538028, 14.251980150777745, 14.262897223017463, 14.27381429525718, 14.284731367496898, 14.295648439736615, 14.306565511976332, 14.317482584216052, 14.328399656455767, 14.339316728695486, 14.350233800935204, 14.361150873174921, 14.372067945414639, 14.382985017654356, 14.393902089894073, 14.40481916213379, 14.415736234373508, 14.426653306613225, 14.437570378852943, 14.44848745109266, 14.459404523332378, 14.470321595572095, 14.481238667811812, 14.49215574005153, 14.503072812291247, 14.513989884530965, 14.524906956770682, 14.535824029010401, 14.546741101250118, 14.557658173489836, 14.568575245729553, 14.57949231796927, 14.590409390208988, 14.601326462448707, 14.612243534688425, 14.623160606928142, 14.63407767916786, 14.644994751407577, 14.655911823647294, 14.666828895887011, 14.677745968126729, 14.688663040366446, 14.699580112606164, 14.710497184845881, 14.721414257085598, 14.732331329325316, 14.743248401565033, 14.75416547380475, 14.76508254604447, 14.775999618284185, 14.786916690523903, 14.797833762763622, 14.80875083500334, 14.819667907243057, 14.830584979482776, 14.841502051722491, 14.852419123962209, 14.863336196201928, 14.874253268441645, 14.885170340681363, 14.89608741292108, 14.907004485160797, 14.917921557400515, 14.928838629640232, 14.93975570187995, 14.950672774119667, 14.961589846359384, 14.972506918599102, 14.98342399083882, 14.994341063078537, 15.005258135318254, 15.016175207557971, 15.027092279797689, 15.038009352037408, 15.048926424277123, 15.05984349651684, 15.07076056875656, 15.081677640996277, 15.092594713235995, 15.103511785475714, 15.11442885771543, 15.125345929955147, 15.136263002194866, 15.147180074434583, 15.1580971466743, 15.169014218914018, 15.179931291153736, 15.190848363393453, 15.20176543563317, 15.212682507872888, 15.223599580112605, 15.234516652352323, 15.24543372459204, 15.256350796831757, 15.267267869071475, 15.278184941311192, 15.28910201355091, 15.300019085790627, 15.310936158030346, 15.321853230270062, 15.332770302509779, 15.343687374749498, 15.354604446989216, 15.365521519228933, 15.376438591468652, 15.387355663708368, 15.398272735948085, 15.409189808187804, 15.420106880427522, 15.431023952667239, 15.441941024906956, 15.452858097146674, 15.463775169386391, 15.474692241626109, 15.485609313865826, 15.496526386105543, 15.50744345834526, 15.518360530584978, 15.529277602824695, 15.540194675064413, 15.55111174730413, 15.562028819543848, 15.572945891783567, 15.583862964023284, 15.594780036263, 15.605697108502719, 15.616614180742436, 15.627531252982154, 15.638448325221873, 15.64936539746159, 15.660282469701306, 15.671199541941025, 15.682116614180742, 15.69303368642046, 15.703950758660177, 15.714867830899895, 15.725784903139612, 15.73670197537933, 15.747619047619047])
+              .range(['#add8e6ff', '#acd7e7ff', '#acd7e7ff', '#abd6e7ff', '#aad5e7ff', '#aad4e7ff', '#a9d3e7ff', '#a8d2e7ff', '#a8d1e7ff', '#a7d1e7ff', '#a6d0e7ff', '#a6cfe8ff', '#a5cee8ff', '#a4cde8ff', '#a3cce8ff', '#a3cbe8ff', '#a2cae8ff', '#a1cae8ff', '#a1c9e8ff', '#a0c8e8ff', '#9fc7e8ff', '#9fc6e9ff', '#9ec5e9ff', '#9dc4e9ff', '#9cc3e9ff', '#9cc3e9ff', '#9bc2e9ff', '#9ac1e9ff', '#9ac0e9ff', '#99bfe9ff', '#98bee9ff', '#98bdeaff', '#97bdeaff', '#96bceaff', '#96bbeaff', '#95baeaff', '#94b9eaff', '#93b8eaff', '#93b7eaff', '#92b6eaff', '#91b6eaff', '#91b5ebff', '#90b4ebff', '#8fb3ebff', '#8fb2ebff', '#8eb1ebff', '#8db0ebff', '#8cafebff', '#8cafebff', '#8baeebff', '#8aadebff', '#8aacecff', '#89abecff', '#88aaecff', '#88a9ecff', '#87a9ecff', '#86a8ecff', '#86a7ecff', '#85a6ecff', '#84a5ecff', '#83a4ecff', '#83a3edff', '#82a2edff', '#81a2edff', '#81a1edff', '#80a0edff', '#7f9fedff', '#7f9eedff', '#7e9dedff', '#7d9cedff', '#7c9cedff', '#7c9beeff', '#7b9aeeff', '#7a99eeff', '#7a98eeff', '#7997eeff', '#7896eeff', '#7895eeff', '#7795eeff', '#7694eeff', '#7593eeff', '#7592efff', '#7491efff', '#7390efff', '#738fefff', '#728eefff', '#718eefff', '#718defff', '#708cefff', '#6f8befff', '#6f8aefff', '#6e89f0ff', '#6d88f0ff', '#6c88f0ff', '#6c87f0ff', '#6b86f0ff', '#6a85f0ff', '#6a84f0ff', '#6983f0ff', '#6882f0ff', '#6881f0ff', '#6781f1ff', '#6680f1ff', '#657ff1ff', '#657ef1ff', '#647df1ff', '#637cf1ff', '#637bf1ff', '#627af1ff', '#617af1ff', '#6179f1ff', '#6078f2ff', '#5f77f2ff', '#5f76f2ff', '#5e75f2ff', '#5d74f2ff', '#5c74f2ff', '#5c73f2ff', '#5b72f2ff', '#5a71f2ff', '#5a70f2ff', '#596ff3ff', '#586ef3ff', '#586df3ff', '#576df3ff', '#566cf3ff', '#556bf3ff', '#556af3ff', '#5469f3ff', '#5368f3ff', '#5367f3ff', '#5266f4ff', '#5166f4ff', '#5165f4ff', '#5064f4ff', '#4f63f4ff', '#4f62f4ff', '#4e61f4ff', '#4d60f4ff', '#4c60f4ff', '#4c5ff4ff', '#4b5ef5ff', '#4a5df5ff', '#4a5cf5ff', '#495bf5ff', '#485af5ff', '#4859f5ff', '#4759f5ff', '#4658f5ff', '#4557f5ff', '#4556f5ff', '#4455f6ff', '#4354f6ff', '#4353f6ff', '#4253f6ff', '#4152f6ff', '#4151f6ff', '#4050f6ff', '#3f4ff6ff', '#3e4ef6ff', '#3e4df6ff', '#3d4cf7ff', '#3c4cf7ff', '#3c4bf7ff', '#3b4af7ff', '#3a49f7ff', '#3a48f7ff', '#3947f7ff', '#3846f7ff', '#3845f7ff', '#3745f8ff', '#3644f8ff', '#3543f8ff', '#3542f8ff', '#3441f8ff', '#3340f8ff', '#333ff8ff', '#323ff8ff', '#313ef8ff', '#313df8ff', '#303cf9ff', '#2f3bf9ff', '#2e3af9ff', '#2e39f9ff', '#2d38f9ff', '#2c38f9ff', '#2c37f9ff', '#2b36f9ff', '#2a35f9ff', '#2a34f9ff', '#2933faff', '#2832faff', '#2831faff', '#2731faff', '#2630faff', '#252ffaff', '#252efaff', '#242dfaff', '#232cfaff', '#232bfaff', '#222bfbff', '#212afbff', '#2129fbff', '#2028fbff', '#1f27fbff', '#1e26fbff', '#1e25fbff', '#1d24fbff', '#1c24fbff', '#1c23fbff', '#1b22fcff', '#1a21fcff', '#1a20fcff', '#191ffcff', '#181efcff', '#181dfcff', '#171dfcff', '#161cfcff', '#151bfcff', '#151afcff', '#1419fdff', '#1318fdff', '#1317fdff', '#1217fdff', '#1116fdff', '#1115fdff', '#1014fdff', '#0f13fdff', '#0e12fdff', '#0e11fdff', '#0d10feff', '#0c10feff', '#0c0ffeff', '#0b0efeff', '#0a0dfeff', '#0a0cfeff', '#090bfeff', '#080afeff', '#0809feff', '#0709feff', '#0608ffff', '#0507ffff', '#0506ffff', '#0405ffff', '#0304ffff', '#0303ffff', '#0203ffff', '#0102ffff', '#0101ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0000feff', '#0000feff', '#0000fdff', '#0000fdff', '#0000fcff', '#0000fcff', '#0000fcff', '#0000fbff', '#0000fbff', '#0000faff', '#0000faff', '#0000f9ff', '#0000f9ff', '#0000f8ff', '#0000f8ff', '#0000f7ff', '#0000f7ff', '#0000f6ff', '#0000f6ff', '#0000f5ff', '#0000f5ff', '#0000f5ff', '#0000f4ff', '#0000f4ff', '#0000f3ff', '#0000f3ff', '#0000f2ff', '#0000f2ff', '#0000f1ff', '#0000f1ff', '#0000f0ff', '#0000f0ff', '#0000efff', '#0000efff', '#0000eeff', '#0000eeff', '#0000eeff', '#0000edff', '#0000edff', '#0000ecff', '#0000ecff', '#0000ebff', '#0000ebff', '#0000eaff', '#0000eaff', '#0000e9ff', '#0000e9ff', '#0000e8ff', '#0000e8ff', '#0000e7ff', '#0000e7ff', '#0000e7ff', '#0000e6ff', '#0000e6ff', '#0000e5ff', '#0000e5ff', '#0000e4ff', '#0000e4ff', '#0000e3ff', '#0000e3ff', '#0000e2ff', '#0000e2ff', '#0000e1ff', '#0000e1ff', '#0000e0ff', '#0000e0ff', '#0000e0ff', '#0000dfff', '#0000dfff', '#0000deff', '#0000deff', '#0000ddff', '#0000ddff', '#0000dcff', '#0000dcff', '#0000dbff', '#0000dbff', '#0000daff', '#0000daff', '#0000d9ff', '#0000d9ff', '#0000d9ff', '#0000d8ff', '#0000d8ff', '#0000d7ff', '#0000d7ff', '#0000d6ff', '#0000d6ff', '#0000d5ff', '#0000d5ff', '#0000d4ff', '#0000d4ff', '#0000d3ff', '#0000d3ff', '#0000d2ff', '#0000d2ff', '#0000d2ff', '#0000d1ff', '#0000d1ff', '#0000d0ff', '#0000d0ff', '#0000cfff', '#0000cfff', '#0000ceff', '#0000ceff', '#0000cdff', '#0000cdff', '#0000ccff', '#0000ccff', '#0000cbff', '#0000cbff', '#0000cbff', '#0000caff', '#0000caff', '#0000c9ff', '#0000c9ff', '#0000c8ff', '#0000c8ff', '#0000c7ff', '#0000c7ff', '#0000c6ff', '#0000c6ff', '#0000c5ff', '#0000c5ff', '#0000c4ff', '#0000c4ff', '#0000c4ff', '#0000c3ff', '#0000c3ff', '#0000c2ff', '#0000c2ff', '#0000c1ff', '#0000c1ff', '#0000c0ff', '#0000c0ff', '#0000bfff', '#0000bfff', '#0000beff', '#0000beff', '#0000bdff', '#0000bdff', '#0000bdff', '#0000bcff', '#0000bcff', '#0000bbff', '#0000bbff', '#0000baff', '#0000baff', '#0000b9ff', '#0000b9ff', '#0000b8ff', '#0000b8ff', '#0000b7ff', '#0000b7ff', '#0000b6ff', '#0000b6ff', '#0000b6ff', '#0000b5ff', '#0000b5ff', '#0000b4ff', '#0000b4ff', '#0000b3ff', '#0000b3ff', '#0000b2ff', '#0000b2ff', '#0000b1ff', '#0000b1ff', '#0000b0ff', '#0000b0ff', '#0000afff', '#0000afff', '#0000afff', '#0000aeff', '#0000aeff', '#0000adff', '#0000adff', '#0000acff', '#0000acff', '#0000abff', '#0000abff', '#0000aaff', '#0000aaff', '#0000a9ff', '#0000a9ff', '#0000a8ff', '#0000a8ff', '#0000a8ff', '#0000a7ff', '#0000a7ff', '#0000a6ff', '#0000a6ff', '#0000a5ff', '#0000a5ff', '#0000a4ff', '#0000a4ff', '#0000a3ff', '#0000a3ff', '#0000a2ff', '#0000a2ff', '#0000a1ff', '#0000a1ff', '#0000a1ff', '#0000a0ff', '#0000a0ff', '#00009fff', '#00009fff', '#00009eff', '#00009eff', '#00009dff', '#00009dff', '#00009cff', '#00009cff', '#00009bff', '#00009bff', '#00009aff', '#00009aff', '#00009aff', '#000099ff', '#000099ff', '#000098ff', '#000098ff', '#000097ff', '#000097ff', '#000096ff', '#000096ff', '#000095ff', '#000095ff', '#000094ff', '#000094ff', '#000093ff', '#000093ff', '#000093ff', '#000092ff', '#000092ff', '#000091ff', '#000091ff', '#000090ff', '#000090ff', '#00008fff', '#00008fff', '#00008eff', '#00008eff', '#00008dff', '#00008dff', '#00008cff', '#00008cff', '#00008cff', '#00008bff']);
+    
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.x = d3.scale.linear()
+              .domain([10.299999999999999, 15.747619047619047])
+              .range([0, 450 - 50]);
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.legend = L.control({position: 'topright'});
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.legend.addTo(map_1767e021abfe1070322f05c89d37e94d);
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.xAxis = d3.svg.axis()
+        .scale(color_map_7e2e17ef8263a31724ab09d410b6f8fc.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([10.299999999999999, 13.023809523809522, 15.747619047619047]);
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.g = color_map_7e2e17ef8263a31724ab09d410b6f8fc.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.g.selectAll("rect")
+        .data(color_map_7e2e17ef8263a31724ab09d410b6f8fc.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_7e2e17ef8263a31724ab09d410b6f8fc.x(color_map_7e2e17ef8263a31724ab09d410b6f8fc.color.domain()[i - 1]) : color_map_7e2e17ef8263a31724ab09d410b6f8fc.x.range()[0],
+            x1: i < color_map_7e2e17ef8263a31724ab09d410b6f8fc.color.domain().length ? color_map_7e2e17ef8263a31724ab09d410b6f8fc.x(color_map_7e2e17ef8263a31724ab09d410b6f8fc.color.domain()[i]) : color_map_7e2e17ef8263a31724ab09d410b6f8fc.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_7e2e17ef8263a31724ab09d410b6f8fc.g.call(color_map_7e2e17ef8263a31724ab09d410b6f8fc.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("PER promedio (jugadores edad 20-35)");
+</script>
+</html>
