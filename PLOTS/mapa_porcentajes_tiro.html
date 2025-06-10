@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93f75fd4e9399ec0f95bc473a35c2f15 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_93f75fd4e9399ec0f95bc473a35c2f15" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_93f75fd4e9399ec0f95bc473a35c2f15 = L.map(
+                "map_93f75fd4e9399ec0f95bc473a35c2f15",
+                {
+                    center: [39.5, -98.35],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_79d86f3c3721bbb42fa6d8bc3e777faa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_79d86f3c3721bbb42fa6d8bc3e777faa.addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+            var circle_marker_99114978177f8421429347a7a6ef2313 = L.circleMarker(
+                [42.3601, -71.0589],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_9c5a3f73ecec0e1103fe5fc3399af44c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_38581d15b2f1b0a8d031f80442754d27 = $(`<div id="html_38581d15b2f1b0a8d031f80442754d27" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> BOS<br><b>FG%:</b> 0.44<br><b>3P%:</b> 0.29<br><b>Rim FG%:</b> 0.62</div>`)[0];
+                popup_9c5a3f73ecec0e1103fe5fc3399af44c.setContent(html_38581d15b2f1b0a8d031f80442754d27);
+            
+        
+
+        circle_marker_99114978177f8421429347a7a6ef2313.bindPopup(popup_9c5a3f73ecec0e1103fe5fc3399af44c)
+        ;
+
+        
+    
+    
+            var circle_marker_5f8272a512c942261f430d5949e3505d = L.circleMarker(
+                [41.8781, -87.6298],
+                {"bubblingMouseEvents": true, "color": "#ffc400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc400ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_d3b38c8f5cd92e8337893975b77bfdd8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_864293a631183655324b48ba0a472562 = $(`<div id="html_864293a631183655324b48ba0a472562" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> CHI<br><b>FG%:</b> 0.43<br><b>3P%:</b> 0.28<br><b>Rim FG%:</b> 0.59</div>`)[0];
+                popup_d3b38c8f5cd92e8337893975b77bfdd8.setContent(html_864293a631183655324b48ba0a472562);
+            
+        
+
+        circle_marker_5f8272a512c942261f430d5949e3505d.bindPopup(popup_d3b38c8f5cd92e8337893975b77bfdd8)
+        ;
+
+        
+    
+    
+            var circle_marker_8764a93ecadae29723bcc41a1191222b = L.circleMarker(
+                [32.7767, -96.797],
+                {"bubblingMouseEvents": true, "color": "#ff1c00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1c00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_a1bc5b13f4a9109c846f28d5b3ec2eb5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6525df92b78f679e4b133429c7b60446 = $(`<div id="html_6525df92b78f679e4b133429c7b60446" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> DAL<br><b>FG%:</b> 0.44<br><b>3P%:</b> 0.29<br><b>Rim FG%:</b> 0.61</div>`)[0];
+                popup_a1bc5b13f4a9109c846f28d5b3ec2eb5.setContent(html_6525df92b78f679e4b133429c7b60446);
+            
+        
+
+        circle_marker_8764a93ecadae29723bcc41a1191222b.bindPopup(popup_a1bc5b13f4a9109c846f28d5b3ec2eb5)
+        ;
+
+        
+    
+    
+            var circle_marker_9ca594133ad70e27bfad3b6e1db66499 = L.circleMarker(
+                [37.7749, -122.4194],
+                {"bubblingMouseEvents": true, "color": "#ff3b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3b00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_04a944385c117e18604ef05717fedf53 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3ea0b6839e80098f058f0c74c762d3a9 = $(`<div id="html_3ea0b6839e80098f058f0c74c762d3a9" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> GSW<br><b>FG%:</b> 0.44<br><b>3P%:</b> 0.28<br><b>Rim FG%:</b> 0.62</div>`)[0];
+                popup_04a944385c117e18604ef05717fedf53.setContent(html_3ea0b6839e80098f058f0c74c762d3a9);
+            
+        
+
+        circle_marker_9ca594133ad70e27bfad3b6e1db66499.bindPopup(popup_04a944385c117e18604ef05717fedf53)
+        ;
+
+        
+    
+    
+            var circle_marker_41fbf44d51f15bdffb929eb7770316b7 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#ffbb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbb00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_2d1e8d2e80881ec504e2533b70687169 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1915b6fd4e27cfe9c5f32e1b6c3e82cb = $(`<div id="html_1915b6fd4e27cfe9c5f32e1b6c3e82cb" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> LAC<br><b>FG%:</b> 0.43<br><b>3P%:</b> 0.30<br><b>Rim FG%:</b> 0.61</div>`)[0];
+                popup_2d1e8d2e80881ec504e2533b70687169.setContent(html_1915b6fd4e27cfe9c5f32e1b6c3e82cb);
+            
+        
+
+        circle_marker_41fbf44d51f15bdffb929eb7770316b7.bindPopup(popup_2d1e8d2e80881ec504e2533b70687169)
+        ;
+
+        
+    
+    
+            var circle_marker_46ff3f42151e513cbd4d63af951806d0 = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "#ff5100ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5100ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_c500701c1ae721081cd217c0b5a36123 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5e16154f1050703c4d0a5201ee85e1c2 = $(`<div id="html_5e16154f1050703c4d0a5201ee85e1c2" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> LAL<br><b>FG%:</b> 0.44<br><b>3P%:</b> 0.30<br><b>Rim FG%:</b> 0.61</div>`)[0];
+                popup_c500701c1ae721081cd217c0b5a36123.setContent(html_5e16154f1050703c4d0a5201ee85e1c2);
+            
+        
+
+        circle_marker_46ff3f42151e513cbd4d63af951806d0.bindPopup(popup_c500701c1ae721081cd217c0b5a36123)
+        ;
+
+        
+    
+    
+            var circle_marker_91bc108888d9665b0d0c7fc936da666d = L.circleMarker(
+                [25.7617, -80.1918],
+                {"bubblingMouseEvents": true, "color": "#ff7600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7600ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_b9b7ff14f67b2c5786aa46929b340287 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f2c8148c2023431e4038af06fa46b714 = $(`<div id="html_f2c8148c2023431e4038af06fa46b714" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> MIA<br><b>FG%:</b> 0.43<br><b>3P%:</b> 0.30<br><b>Rim FG%:</b> 0.61</div>`)[0];
+                popup_b9b7ff14f67b2c5786aa46929b340287.setContent(html_f2c8148c2023431e4038af06fa46b714);
+            
+        
+
+        circle_marker_91bc108888d9665b0d0c7fc936da666d.bindPopup(popup_b9b7ff14f67b2c5786aa46929b340287)
+        ;
+
+        
+    
+    
+            var circle_marker_a35b517dcd7f8c09bc65da7cb088598c = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_b8af2377f504d3d9282c8785436d2578 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_425a736ff085bc1103e0c59fcb8e3234 = $(`<div id="html_425a736ff085bc1103e0c59fcb8e3234" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> NYK<br><b>FG%:</b> 0.42<br><b>3P%:</b> 0.29<br><b>Rim FG%:</b> 0.58</div>`)[0];
+                popup_b8af2377f504d3d9282c8785436d2578.setContent(html_425a736ff085bc1103e0c59fcb8e3234);
+            
+        
+
+        circle_marker_a35b517dcd7f8c09bc65da7cb088598c.bindPopup(popup_b8af2377f504d3d9282c8785436d2578)
+        ;
+
+        
+    
+    
+            var circle_marker_7d36bdcf1649f6d55296c70bda6ef400 = L.circleMarker(
+                [39.9526, -75.1652],
+                {"bubblingMouseEvents": true, "color": "#ffa600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa600ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_be8dc0acda3420af916c3c7d60319cf3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1c03437521f0a489d9bb545c551d419b = $(`<div id="html_1c03437521f0a489d9bb545c551d419b" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> PHI<br><b>FG%:</b> 0.43<br><b>3P%:</b> 0.28<br><b>Rim FG%:</b> 0.63</div>`)[0];
+                popup_be8dc0acda3420af916c3c7d60319cf3.setContent(html_1c03437521f0a489d9bb545c551d419b);
+            
+        
+
+        circle_marker_7d36bdcf1649f6d55296c70bda6ef400.bindPopup(popup_be8dc0acda3420af916c3c7d60319cf3)
+        ;
+
+        
+    
+    
+            var circle_marker_e5e87ed2fe249978dbeafeffa299b3c3 = L.circleMarker(
+                [43.65107, -79.347015],
+                {"bubblingMouseEvents": true, "color": "#ffc400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc400ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+        
+    
+        var popup_fa61ad0372b594b3a3e6de0e3603c6c5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8de2287028476db99239c9750d1174bf = $(`<div id="html_8de2287028476db99239c9750d1174bf" style="width: 100.0%; height: 100.0%;"><b>Equipo:</b> TOR<br><b>FG%:</b> 0.43<br><b>3P%:</b> 0.29<br><b>Rim FG%:</b> 0.59</div>`)[0];
+                popup_fa61ad0372b594b3a3e6de0e3603c6c5.setContent(html_8de2287028476db99239c9750d1174bf);
+            
+        
+
+        circle_marker_e5e87ed2fe249978dbeafeffa299b3c3.bindPopup(popup_fa61ad0372b594b3a3e6de0e3603c6c5)
+        ;
+
+        
+    
+    
+    var color_map_f312af3ebf74841b96d3de56de54ca0a = {};
+
+    
+    color_map_f312af3ebf74841b96d3de56de54ca0a.color = d3.scale.threshold()
+              .domain([0.4248601747815231, 0.4248883015351405, 0.42491642828875786, 0.42494455504237527, 0.4249726817959927, 0.42500080854961003, 0.42502893530322744, 0.42505706205684485, 0.42508518881046226, 0.4251133155640796, 0.425141442317697, 0.4251695690713144, 0.4251976958249318, 0.4252258225785492, 0.4252539493321666, 0.42528207608578394, 0.42531020283940135, 0.42533832959301876, 0.42536645634663617, 0.4253945831002535, 0.42542270985387093, 0.42545083660748834, 0.4254789633611057, 0.4255070901147231, 0.4255352168683405, 0.42556334362195786, 0.42559147037557526, 0.4256195971291927, 0.4256477238828101, 0.42567585063642743, 0.42570397739004484, 0.42573210414366225, 0.4257602308972796, 0.425788357650897, 0.4258164844045144, 0.42584461115813177, 0.4258727379117492, 0.4259008646653666, 0.425928991418984, 0.42595711817260135, 0.42598524492621875, 0.42601337167983616, 0.4260414984334535, 0.4260696251870709, 0.42609775194068833, 0.4261258786943057, 0.4261540054479231, 0.4261821322015405, 0.4262102589551579, 0.42623838570877526, 0.42626651246239267, 0.4262946392160101, 0.4263227659696274, 0.42635089272324483, 0.42637901947686224, 0.4264071462304796, 0.426435272984097, 0.4264633997377144, 0.4264915264913318, 0.42651965324494917, 0.4265477799985666, 0.426575906752184, 0.42660403350580134, 0.42663216025941875, 0.42666028701303615, 0.4266884137666535, 0.4267165405202709, 0.4267446672738883, 0.42677279402750573, 0.4268009207811231, 0.4268290475347405, 0.4268571742883579, 0.42688530104197525, 0.42691342779559266, 0.42694155454921007, 0.4269696813028274, 0.4269978080564448, 0.42702593481006224, 0.42705406156367964, 0.427082188317297, 0.4271103150709144, 0.4271384418245318, 0.42716656857814916, 0.42719469533176657, 0.427222822085384, 0.42725094883900133, 0.42727907559261874, 0.42730720234623615, 0.42733532909985356, 0.4273634558534709, 0.4273915826070883, 0.4274197093607057, 0.4274478361143231, 0.4274759628679405, 0.4275040896215579, 0.42753221637517524, 0.42756034312879265, 0.42758846988241006, 0.42761659663602747, 0.4276447233896448, 0.42767285014326223, 0.42770097689687964, 0.427729103650497, 0.4277572304041144, 0.4277853571577318, 0.42781348391134916, 0.42784161066496657, 0.427869737418584, 0.4278978641722014, 0.42792599092581873, 0.42795411767943614, 0.42798224443305355, 0.4280103711866709, 0.4280384979402883, 0.4280666246939057, 0.42809475144752307, 0.4281228782011405, 0.4281510049547579, 0.4281791317083753, 0.42820725846199265, 0.42823538521561005, 0.42826351196922746, 0.4282916387228448, 0.4283197654764622, 0.42834789223007963, 0.428376018983697, 0.4284041457373144, 0.4284322724909318, 0.4284603992445492, 0.42848852599816656, 0.42851665275178397, 0.4285447795054014, 0.4285729062590187, 0.42860103301263613, 0.42862915976625354, 0.4286572865198709, 0.4286854132734883, 0.4287135400271057, 0.4287416667807231, 0.42876979353434047, 0.4287979202879579, 0.4288260470415753, 0.42885417379519264, 0.42888230054881005, 0.42891042730242745, 0.4289385540560448, 0.4289666808096622, 0.4289948075632796, 0.42902293431689703, 0.4290510610705144, 0.4290791878241318, 0.4291073145777492, 0.42913544133136655, 0.42916356808498396, 0.42919169483860137, 0.4292198215922187, 0.42924794834583613, 0.42927607509945354, 0.42930420185307094, 0.4293323286066883, 0.4293604553603057, 0.4293885821139231, 0.42941670886754046, 0.42944483562115787, 0.4294729623747753, 0.42950108912839263, 0.42952921588201004, 0.42955734263562745, 0.4295854693892448, 0.4296135961428622, 0.4296417228964796, 0.429669849650097, 0.4296979764037144, 0.4297261031573318, 0.4297542299109492, 0.42978235666456654, 0.42981048341818395, 0.42983861017180136, 0.42986673692541877, 0.4298948636790361, 0.42992299043265353, 0.42995111718627094, 0.4299792439398883, 0.4300073706935057, 0.4300354974471231, 0.43006362420074046, 0.43009175095435787, 0.4301198777079753, 0.4301480044615926, 0.43017613121521003, 0.43020425796882744, 0.43023238472244485, 0.4302605114760622, 0.4302886382296796, 0.430316764983297, 0.43034489173691437, 0.4303730184905318, 0.4304011452441492, 0.43042927199776654, 0.43045739875138395, 0.43048552550500135, 0.43051365225861876, 0.4305417790122361, 0.4305699057658535, 0.43059803251947093, 0.4306261592730883, 0.4306542860267057, 0.4306824127803231, 0.43071053953394045, 0.43073866628755786, 0.43076679304117527, 0.4307949197947927, 0.43082304654841, 0.43085117330202743, 0.43087930005564484, 0.4309074268092622, 0.4309355535628796, 0.430963680316497, 0.43099180707011436, 0.43101993382373177, 0.4310480605773492, 0.4310761873309666, 0.43110431408458394, 0.43113244083820135, 0.43116056759181876, 0.4311886943454361, 0.4312168210990535, 0.4312449478526709, 0.4312730746062883, 0.4313012013599057, 0.4313293281135231, 0.4313574548671405, 0.43138558162075785, 0.43141370837437526, 0.43144183512799267, 0.43146996188161, 0.43149808863522743, 0.43152621538884484, 0.4315543421424622, 0.4315824688960796, 0.431610595649697, 0.4316387224033144, 0.43166684915693176, 0.4316949759105492, 0.4317231026641666, 0.43175122941778393, 0.43177935617140134, 0.43180748292501875, 0.4318356096786361, 0.4318637364322535, 0.4318918631858709, 0.4319199899394883, 0.4319481166931057, 0.4319762434467231, 0.4320043702003405, 0.43203249695395785, 0.43206062370757525, 0.43208875046119266, 0.43211687721481, 0.4321450039684274, 0.43217313072204483, 0.43220125747566224, 0.4322293842292796, 0.432257510982897, 0.4322856377365144, 0.43231376449013176, 0.43234189124374917, 0.4323700179973666, 0.4323981447509839, 0.43242627150460133, 0.43245439825821874, 0.43248252501183615, 0.4325106517654535, 0.4325387785190709, 0.4325669052726883, 0.43259503202630567, 0.4326231587799231, 0.4326512855335405, 0.43267941228715784, 0.43270753904077525, 0.43273566579439265, 0.43276379254801006, 0.4327919193016274, 0.4328200460552448, 0.43284817280886223, 0.4328762995624796, 0.432904426316097, 0.4329325530697144, 0.43296067982333175, 0.43298880657694916, 0.43301693333056657, 0.433045060084184, 0.4330731868378013, 0.43310131359141874, 0.43312944034503614, 0.4331575670986535, 0.4331856938522709, 0.4332138206058883, 0.43324194735950566, 0.43327007411312307, 0.4332982008667405, 0.4333263276203579, 0.43335445437397524, 0.43338258112759265, 0.43341070788121006, 0.4334388346348274, 0.4334669613884448, 0.4334950881420622, 0.4335232148956796, 0.433551341649297, 0.4335794684029144, 0.4336075951565318, 0.43363572191014915, 0.43366384866376656, 0.43369197541738397, 0.4337201021710013, 0.43374822892461873, 0.43377635567823614, 0.4338044824318535, 0.4338326091854709, 0.4338607359390883, 0.4338888626927057, 0.43391698944632306, 0.4339451161999405, 0.4339732429535579, 0.43400136970717523, 0.43402949646079264, 0.43405762321441005, 0.4340857499680274, 0.4341138767216448, 0.4341420034752622, 0.4341701302288796, 0.434198256982497, 0.4342263837361144, 0.4342545104897318, 0.43428263724334915, 0.43431076399696655, 0.43433889075058396, 0.4343670175042013, 0.4343951442578187, 0.43442327101143613, 0.4344513977650535, 0.4344795245186709, 0.4345076512722883, 0.4345357780259057, 0.43456390477952306, 0.43459203153314047, 0.4346201582867579, 0.4346482850403752, 0.43467641179399263, 0.43470453854761004, 0.4347326653012274, 0.4347607920548448, 0.4347889188084622, 0.4348170455620796, 0.43484517231569697, 0.4348732990693144, 0.4349014258229318, 0.43492955257654914, 0.43495767933016655, 0.43498580608378395, 0.4350139328374013, 0.4350420595910187, 0.4350701863446361, 0.43509831309825353, 0.4351264398518709, 0.4351545666054883, 0.4351826933591057, 0.43521082011272305, 0.43523894686634046, 0.43526707361995787, 0.4352952003735752, 0.4353233271271926, 0.43535145388081004, 0.43537958063442744, 0.4354077073880448, 0.4354358341416622, 0.4354639608952796, 0.43549208764889696, 0.43552021440251437, 0.4355483411561318, 0.43557646790974913, 0.43560459466336654, 0.43563272141698395, 0.43566084817060136, 0.4356889749242187, 0.4357171016778361, 0.4357452284314535, 0.4357733551850709, 0.4358014819386883, 0.4358296086923057, 0.43585773544592304, 0.43588586219954045, 0.43591398895315786, 0.43594211570677527, 0.4359702424603926, 0.43599836921401003, 0.43602649596762744, 0.4360546227212448, 0.4360827494748622, 0.4361108762284796, 0.43613900298209696, 0.43616712973571437, 0.4361952564893318, 0.4362233832429492, 0.43625150999656653, 0.43627963675018394, 0.43630776350380135, 0.4363358902574187, 0.4363640170110361, 0.4363921437646535, 0.43642027051827087, 0.4364483972718883, 0.4364765240255057, 0.4365046507791231, 0.43653277753274045, 0.43656090428635785, 0.43658903103997526, 0.4366171577935926, 0.43664528454721, 0.43667341130082743, 0.4367015380544448, 0.4367296648080622, 0.4367577915616796, 0.436785918315297, 0.43681404506891436, 0.43684217182253177, 0.4368702985761492, 0.4368984253297665, 0.43692655208338393, 0.43695467883700134, 0.4369828055906187, 0.4370109323442361, 0.4370390590978535, 0.4370671858514709, 0.43709531260508827, 0.4371234393587057, 0.4371515661123231, 0.43717969286594044, 0.43720781961955785, 0.43723594637317525, 0.4372640731267926, 0.43729219988041, 0.4373203266340274, 0.43734845338764483, 0.4373765801412622, 0.4374047068948796, 0.437432833648497, 0.43746096040211435, 0.43748908715573176, 0.43751721390934917, 0.4375453406629665, 0.4375734674165839, 0.43760159417020134, 0.43762972092381874, 0.4376578476774361, 0.4376859744310535, 0.4377141011846709, 0.43774222793828826, 0.43777035469190567, 0.4377984814455231, 0.43782660819914043, 0.43785473495275784, 0.43788286170637525, 0.43791098845999266, 0.43793911521361, 0.4379672419672274, 0.4379953687208448, 0.4380234954744622, 0.4380516222280796, 0.438079748981697, 0.43810787573531434, 0.43813600248893175, 0.43816412924254916, 0.4381922559961665, 0.4382203827497839, 0.43824850950340133, 0.43827663625701874, 0.4383047630106361, 0.4383328897642535, 0.4383610165178709, 0.43838914327148826, 0.43841727002510567, 0.4384453967787231, 0.4384735235323405, 0.43850165028595783, 0.43852977703957524, 0.43855790379319265, 0.43858603054681, 0.4386141573004274, 0.4386422840540448, 0.43867041080766217, 0.4386985375612796, 0.438726664314897, 0.43875479106851434, 0.43878291782213175, 0.43881104457574915, 0.43883917132936656, 0.4388672980829839, 0.4388954248366013])
+              .range(['#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffd00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff100ff', '#fff100ff', '#fff000ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe400ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd800ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffcb00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbf00ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb200ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa100ff', '#ffa000ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff5000ff', '#ff4f00ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.x = d3.scale.linear()
+              .domain([0.4248601747815231, 0.4388954248366013])
+              .range([0, 450 - 50]);
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.legend = L.control({position: 'topright'});
+    color_map_f312af3ebf74841b96d3de56de54ca0a.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_f312af3ebf74841b96d3de56de54ca0a.legend.addTo(map_93f75fd4e9399ec0f95bc473a35c2f15);
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.xAxis = d3.svg.axis()
+        .scale(color_map_f312af3ebf74841b96d3de56de54ca0a.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.4248601747815231, 0.4318777998090622, 0.4388954248366013]);
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.g = color_map_f312af3ebf74841b96d3de56de54ca0a.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.g.selectAll("rect")
+        .data(color_map_f312af3ebf74841b96d3de56de54ca0a.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_f312af3ebf74841b96d3de56de54ca0a.x(color_map_f312af3ebf74841b96d3de56de54ca0a.color.domain()[i - 1]) : color_map_f312af3ebf74841b96d3de56de54ca0a.x.range()[0],
+            x1: i < color_map_f312af3ebf74841b96d3de56de54ca0a.color.domain().length ? color_map_f312af3ebf74841b96d3de56de54ca0a.x(color_map_f312af3ebf74841b96d3de56de54ca0a.color.domain()[i]) : color_map_f312af3ebf74841b96d3de56de54ca0a.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_f312af3ebf74841b96d3de56de54ca0a.g.call(color_map_f312af3ebf74841b96d3de56de54ca0a.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("FG% promedio por equipo");
+</script>
+</html>
